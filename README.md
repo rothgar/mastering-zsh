@@ -12,7 +12,7 @@ You're free to use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [prez
 We will assume you are already familiar with basic command line usage.
 How to run a command, how to set a variable, what command history is, etc.
 
-This workshop will build on the basics to show you advanced usage, customizations, and practical examples to make you better.
+This documentation will build on the basics to show you advanced usage, customizations, and practical examples to make you better.
 
 ## Table of Contents
 
