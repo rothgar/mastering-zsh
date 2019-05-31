@@ -65,4 +65,4 @@ In general I still write all of my scripts in bash so I only use these substitut
 
 ---
 
-[home](../../README.md)
+Previous: [aliases](aliases.md) | [home](../../README.md) | Next: [functions](functions.md)

@@ -46,4 +46,4 @@ For that you can use [`hooks-define-hook`](https://github.com/willghatch/zsh-hoo
 
 ---
 
-[home](../../README.md)
+Previous: [prompt](prompt.md) | [home](../../README.md) | Next: [aliases](../helpers/aliases.md)

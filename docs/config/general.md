@@ -72,4 +72,4 @@ You'll probably use some of them (examples in the functions section), but most f
 
 ---
 
-[home](../../README.md)
+[home](../../README.md) | Next: [history](history.md)

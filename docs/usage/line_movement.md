@@ -117,4 +117,4 @@ There's also an included [`surround`](https://github.com/zsh-users/zsh/blob/mast
 
 ---
 
-[home](../../README.md)
+Previous: [completions](../helpers/completions.md) | [home](../../README.md) | Next: [navigation](navigation.md)

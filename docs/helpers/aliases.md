@@ -147,4 +147,4 @@ For more options on powering up your interactive shell check out [functions](fun
 
 ---
 
-[home](../../README.md)
+Previous: [hooks](hooks.md) | [home](../../README.md) | Next: [variables](variables.md)

@@ -40,4 +40,4 @@ You can use it with `alias zcp='zmv -C'` and `alias zln='zmv -L'` or you can sym
 
 ---
 
-[home](../../README.md)
+Previous: [navigation](navigation.md) | [home](../../README.md)

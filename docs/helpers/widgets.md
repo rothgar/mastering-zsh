@@ -145,4 +145,4 @@ If you want to get really fancy you can check out [`tetriscurses`](https://githu
 
 ---
 
-[home](../../README.md)
+Previous: [functions](functions.md) | [home](../../README.md) | Next: [completions](completions.md)

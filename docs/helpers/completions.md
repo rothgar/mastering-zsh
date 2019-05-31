@@ -42,4 +42,4 @@ The rest of this section will have to come at a later date.
 
 ---
 
-[home](../../README.md)
+Previous: [widgets](widgets.md) | [home](../../README.md) | Next: [line movement](../usage/line_movement.md)

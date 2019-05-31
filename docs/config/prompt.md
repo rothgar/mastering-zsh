@@ -94,4 +94,4 @@ Follow the instructions above to load the prompt in your `.zshrc` file.
 
 ---
 
-[home](../../README.md)
+Previous: [history](history.md) | [home](../../README.md) | Next: [hooks](hooks.md)

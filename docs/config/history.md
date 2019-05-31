@@ -208,4 +208,4 @@ function fh() {
 
 ---
 
-[home](../../README.md)
+Previous: [general](general.md) | [home](../../README.md) | Next: [prompt](prompt.md)

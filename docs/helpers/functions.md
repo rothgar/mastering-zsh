@@ -157,4 +157,4 @@ matrix() { echo -e "\e[1;40m" ; clear ; while :; do echo $LINES $COLUMNS $(( $RA
 
 ---
 
-[home](../../README.md)
+Previous: [variables](variables.md) | [home](../../README.md) | Next: [widgets](widgets.md)
