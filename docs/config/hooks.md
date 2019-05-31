@@ -3,7 +3,7 @@
 [ Hooks ](http://zsh.sourceforge.net/Doc/Release/Functions.html#Hook-Functions) are arrays of functions that happen automatically when events occur in your shell.
 The hooks that are frequently used are `chpwd`, `precmd`, `preexec`, and `zshaddhistory`.
 
-`precmd` is executed before your prompt is displayed and is often used to set values in your [`$PROMPT'](prompt.md).
+`precmd` is executed before your prompt is displayed and is often used to set values in your [`$PROMPT`](prompt.md).
 `preexec` is executed between when you press `enter` on a command prompt but before the command is executed.
 
 Each hook is an array of [widgets](../helpers/widgets.md) which are executed by zsh.
