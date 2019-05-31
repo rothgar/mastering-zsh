@@ -15,15 +15,14 @@ You can list all available widgets with
 zle -al
 ```
 
-If you want to list your current keybindings and widgets use.
-
-```bash
-bindkey
-```
+If you want to list your current keybindings and widgets use the `bindkey` command by itself.
+To see a list of bindings and a command you can run to set the key binding in your `.zshrc` file use `bindkey -L`
 
 The widgets with `.` at the begining of the name are read-only system widgets that cannot be changed.
 
 An example of binding a built in widget to a keyboard shortcut is
+
+> When you bind a key to a widget the privious key binding, if there is one, will be overridden.
 
 ```bash
 bindkey '^a' begining-of-line

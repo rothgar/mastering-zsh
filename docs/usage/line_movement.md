@@ -31,7 +31,7 @@ For reference:
 * `^[` = Alt
 * `\e` or `\E` = Escape
 
-If you want to figure out how a key sequence should be represented check out `xxd`.
+If you want to figure out how a key sequence should be represented you can try `xxd` or `echo " $keypress"`.
 The key letter you press is not case sensitive.
 So `^a` is the same as `^A`.
 
@@ -48,6 +48,8 @@ Let's set the emacs begining and end of line keyboard shortcuts and reverse sear
 bindkey '^r' history-incremental-search-backward
 bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
+# Also fix annoying vi backspace
+bindkey '^?' backward-delete-char
 ```
 
 Now I have four ways to get to the begining and end of a command line.

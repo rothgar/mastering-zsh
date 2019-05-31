@@ -3,6 +3,9 @@
 The `bindkey` key mappings can be very confusing to decipher.
 It can use multiple different notations but it's smart to use the same key notation throughout your configuration.
 
+You can print all of your current key bindings in the current keymap with `bindkey`.
+To print the full `bindkey` command to add to your `.zshrc` file use `bindkey -L`.
+
 In general you'll bind a widget so a key sequence or a key with modifier.
 This can be declared in (caret notation)[https://en.wikipedia.org/wiki/Caret_notation] using `^`, using (escape sequences)[https://en.wikipedia.org/wiki/Escape_sequence] using `\`, in octal (`\NNN`), hex (`\xNN`), or unicode (`\uNNNN`).
 None of these are particularly great for people to read.
