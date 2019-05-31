@@ -7,7 +7,7 @@ Did you know zsh has a built in ftp client and calendar?
 Instead we will focus on functions of zsh that improve your productivity and help you get more out of your shell.
 
 We also will not be using any frameworks to customize the shell.
-You're free to use (oh-my-zsh)[https://github.com/robbyrussell/oh-my-zsh], (prezto)[https://github.com/sorin-ionescu/prezto], or many other options. They help you get started fast but they don't help you understand zsh and some of its more advanced features.
+You're free to use [ oh-my-zsh ]( https://github.com/robbyrussell/oh-my-zsh ), [ prezto ]( https://github.com/sorin-ionescu/prezto ), or many other options. They help you get started fast but they don't help you understand zsh and some of its more advanced features.
 
 We will assume you are already familiar with basic command line usage.
 How to run a command, how to set a variable, what command history is, etc.
