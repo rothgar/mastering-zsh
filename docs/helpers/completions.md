@@ -1,4 +1,4 @@
-# [WIP] Completions
+# Completions
 
 zsh has very comprehensive completions which is one of the main reasons to switch to zsh for your interactive shell.
 Under the covers it works similarly to other shell completion engines (completions are read from files and functions on disc) but there are a few features that make it better.
