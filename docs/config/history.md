@@ -110,7 +110,7 @@ fc
 ![](../../img/fc-example.gif)
 
 For global string replacement you can use `string=replace` syntax.
-If you want to run the command with using an editor override `$EDITOR` with `-e -`.
+If you want to run the command without using an editor override `$EDITOR` with `-e -`.
 
 ```bash
 echo foo bar baz foo
