@@ -80,6 +80,67 @@ There are many `*-kill-*` widgets available that will let you kill words, lines,
 
 If you don't want to feel like a murderer you can also try the `*-yank-*` and `*-push-*` widgets too.
 
+### Advance Word Movements and Modifications
+When jumping between words (for example `[^f` and `[^b` for forward and backwards in emacs mode). The shell uses a few different
+things to define what a "word" is. By default you can `echo $WORDCHARS` to see all the special characters the shell will include
+as a single word. For example the default is:
+```
+$ echo $WORDCHARS
+*?_-.[]~=/&;!#$%^(){}<>
+```
+This means that any alphanumeric character plus any of the above will be combined to be a single word. Notice how `/` is
+included in the above. This means `foo/bar-bazz` will be one word to be acted upon.
+
+If you are coming from bash and want your jump/delete word functions to stop at `/` and `-` you can add this in
+your .zshrc:
+```
+autoload -U select-word-style
+select-word-style bash
+```
+Without it `[^D` will delete a full directory path. For example:
+```
+## Without
+$ cd /project/example/delete
+## Press [^D from front beginning of line
+$  /project/example/delete
+## Press [^D again
+$
+
+## With select-word-style bash
+$ cd /project/example/delete
+## Press [^D from front beginning of line
+$  /project/example/delete
+## Press [^D again
+$ /example/delete
+```
+You can learn about the available word styles and their behavior [here](https://linux.die.net/man/1/zshcontrib) (search for `select-word-syle`).
+But here is a quick explanation:
+```
+$ select-word-style
+Usage: select-word-style word-style
+where word-style is one of the characters in parentheses:
+(b)ash:       Word characters are alphanumerics only
+(n)ormal:     Word characters are alphanumerics plus $WORDCHARS
+(s)hell:      Words are command arguments using shell syntax
+(w)hitespace: Words are whitespace-delimited
+(d)efault:    Use default, no special handling (usually same as `n')
+(q)uit:       Quit without setting a new style
+```
+One important thing to note is that any `select-word-style` that is not `normal` will may not respect `$WORDCHARS`.
+When in `normal` select-word-style all alphanumeric characters plus anything in `$WORDCHARS` is used by zsh to determine
+when to stop its action. If you want even more control feel free to set the var directly. This can then be used to make your
+backwards jump different than your forwards jump. 
+For example if I want my backward delete to delete a whole directory path I can set this:
+```
+## with word-style set to `normal` but $WORDCHARS=''
+default-backward-delete-word () {
+  local WORDCHARS="*?_[]~=/&;!#$%^(){}<>"
+  zle backward-delete-word
+}
+zle -N default-backward-delete-word
+bindkey '^W' default-backward-delete-word
+```
+
 ### Yank current command and paste
 
 For example, let's say you have a long command line typed up but you forgot you needed to run a command first or look up some information.
