@@ -27,12 +27,13 @@ Something I've found to be successful is to have a `$ZDOTDIR/zsh.d` folder and d
 You can then easily source the files in your `.zshrc` file with something like
 
 ```bash
-if [[ -d "${ZDOTDIR:-$HOME}"/zsh.d ]]; then
-    for ZSH_FILE in $(ls -A "${ZDOTDIR:-$HOME}"/zsh.d/*.zsh); do
-        source "${ZSH_FILE}"
-    done
-fi
+for ZSH_FILE in "${ZDOTDIR:-$HOME}"/zsh.d/*.zsh(N); do
+    source "${ZSH_FILE}"
+done
 ```
+
+The `(N)` at the end of the pattern in the for loop above is called a glob qualifier.
+Its purpose is to set the `NULL_GLOB` option, which tells the loop not to error if that location is missing or empty. More information about glob qualifiers can be found in the [docs](http://zsh.sourceforge.net/Doc/Release/Expansion.html#Glob-Qualifiers).
 
 ## fpath
 
@@ -73,3 +74,4 @@ You'll probably use some of them (examples in the functions section), but most f
 ---
 
 [home](../../README.md) | Next: [history](history.md)
+
