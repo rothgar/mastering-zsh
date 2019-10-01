@@ -7,7 +7,7 @@ There are built in widgets for a majority of shell functionality and you can hav
 User widgets are used by binding them to keyboard shortcuts using the `bindkey` command.
 More about defining widgets can be found in the zle section.
 
-Widgets have descriptive names such as `vi-backward-kill-word` and `biginning-of-history`.
+Widgets have descriptive names such as `vi-backward-kill-word` and `beginning-of-history`.
 User defined widgets have no standard naming convention but you should stick with something meaningful for troubleshooting if things go wrong.
 
 You can list all available widgets with
