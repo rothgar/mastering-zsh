@@ -51,7 +51,7 @@ If you want to use words from commands earlier in your history you can also use 
 * `!-2; !-1` = Combine last two commands into a single line
 
 You can also make this better with `bindkey` and the insert-last-word zle widget.
-More on what this means can be found in the (widgets section)[../helpers/widgets.md].
+More on what this means can be found in the [widgets section](../helpers/widgets.md).
 
 ```bash
 # press Alt+. to insert the last word from the previous command

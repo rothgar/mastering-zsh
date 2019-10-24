@@ -1,6 +1,6 @@
 # Prompt
 
-You're terminal prompt is your best guide to passive productivity gains.
+Your terminal prompt is your best guide to passive productivity gains.
 It's also a very opinionated part of any shell.
 Some people like multiple lines.
 Some people love minimal prompts without distractions.
