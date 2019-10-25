@@ -32,6 +32,7 @@ For most people working with history means using `sudo !!` or occationally `ctrl
 To master working with your history we should look at a few other commonly used shortcuts instead.
 First of all, you should know `!!` is essentially the same as
 ```bash
+# Note: this doesn't actually work but the fc command is effectivly the same
 alias !!='fc -ln -1'
 ```
 _More on `fc` later_
