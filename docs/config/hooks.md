@@ -9,6 +9,55 @@ The hooks that are frequently used are `chpwd`, `precmd`, `preexec`, and `zshadd
 Each hook is an array of [widgets](../helpers/widgets.md) which are executed by zsh.
 To display what widgets are in each of your hooks you can use the [zhooks function](https://github.com/agkozak/zhooks).
 
+## Set $PROMPT in precmd
+
+One example fo using a hook is by changing your `$PROMPT` using `precmd` hook.
+`precmd` runs before each prompt which makes it a perfect candidate for setting your `$PROMPT`.
+
+If you want to create a custom function that sets your `$RPROMPT` variable to your last command exit code you can use this.
+
+```bash
+# allows parameter expansion, arithmatic, and shell substitution in prompts
+setopt prompt_subst
+
+function check_last_exit_code() {
+  local LAST_EXIT_CODE=$?
+  if [[ $LAST_EXIT_CODE -ne 0 ]]; then
+    local EXIT_CODE_PROMPT=' '
+    EXIT_CODE_PROMPT+="%{$fg[red]%}-%{$reset_color%}"
+    EXIT_CODE_PROMPT+="%{$fg_bold[red]%}$LAST_EXIT_CODE%{$reset_color%}"
+    EXIT_CODE_PROMPT+="%{$fg[red]%}-%{$reset_color%}"
+    RPROMPT="$EXIT_CODE_PROMPT"
+  fi
+}
+
+typeset -a precmd_functions
+# append the function to our array of precmd functions
+precmd_functions+=(check_last_exit_code)
+```
+This will run the `precmd_functions` each time you execute a command and get a new prompt.
+Notice how we set `RPROMPT` in the function
+
+Likewise you can also use the function directly to set `RPROMPT` via a subshell but you'll need to make sure your function `echo`s the text instead of setting the variable directly.
+
+```bash
+setopt prompt_subst
+
+function check_last_exit_code() {
+  local LAST_EXIT_CODE=$?
+  if [[ $LAST_EXIT_CODE -ne 0 ]]; then
+    local EXIT_CODE_PROMPT=' '
+    EXIT_CODE_PROMPT+="%{$fg[red]%}-%{$reset_color%}"
+    EXIT_CODE_PROMPT+="%{$fg_bold[red]%}$LAST_EXIT_CODE%{$reset_color%}"
+    EXIT_CODE_PROMPT+="%{$fg[red]%}-%{$reset_color%}"
+    echo "$EXIT_CODE_PROMPT"
+  fi
+}
+
+# set RPROMT directly. Will override other functions where it gets set
+RPROMPT='$(check_last_exit_code)'
+```
+
 ## Add Function to Hook
 
 If you want to extend your hooks you can easily do it with the [`add-zsh-hook`](https://github.com/zsh-users/zsh/blob/master/Functions/Misc/add-zsh-hook) which should be available in most zsh packages.
