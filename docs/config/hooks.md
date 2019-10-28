@@ -28,6 +28,8 @@ function check_last_exit_code() {
     EXIT_CODE_PROMPT+="%{$fg_bold[red]%}$LAST_EXIT_CODE%{$reset_color%}"
     EXIT_CODE_PROMPT+="%{$fg[red]%}-%{$reset_color%}"
     RPROMPT="$EXIT_CODE_PROMPT"
+  else
+    RPROMPT=' '
   fi
 }
 
