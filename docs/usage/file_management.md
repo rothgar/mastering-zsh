@@ -31,7 +31,7 @@ Example usage:
 $ zmv '(*).JPEG' '$1.jpg'
 
 # replace all spaces in file and folder names with underscore
-# noctice parameter replacement is avalible from the variables section
+# notice parameter replacement is available from the variables section
 $ zmv '(* *)' '${1// /_}'
 ```
 

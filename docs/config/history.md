@@ -1,6 +1,6 @@
 # History
 
-If you work in the shell long enough your history will become be your own personal reference.
+If you work in the shell long enough your history will become your own personal reference.
 It's like automatic documentation which is the best kind of documentation.
 
 ## Configuration
@@ -32,7 +32,7 @@ For most people working with history means using `sudo !!` or occationally `ctrl
 To master working with your history we should look at a few other commonly used shortcuts instead.
 First of all, you should know `!!` is essentially the same as
 ```bash
-# Note: this doesn't actually work but the fc command is effectivly the same
+# Note: this doesn't actually work but the fc command is effectively the same
 alias !!='fc -ln -1'
 ```
 _More on `fc` later_

@@ -26,4 +26,4 @@ To delete a key binding you can use `bindkey -d $KEYS`.
 Make sure you don't delete characters you need for typing.
 
 I have got myself in trouble more than once with `bindkey -d ' '`.
-As a thought experiement, how would you remmedy the pickle you get yourself in if you do that?
+As a thought experiement, how would you remedy the pickle you get yourself in if you do that?

@@ -22,7 +22,7 @@ The widgets with `.` at the begining of the name are read-only system widgets th
 
 An example of binding a built in widget to a keyboard shortcut is
 
-> When you bind a key to a widget the privious key binding, if there is one, will be overridden.
+> When you bind a key to a widget any previous key binding will be overridden.
 
 ```bash
 bindkey '^a' begining-of-line
