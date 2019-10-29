@@ -83,7 +83,7 @@ $ pwd
 /var/log/aero/errors
 ```
 
-You can also swap any part of of your current path.
+You can also swap any part of your current path.
 If you have two directories with similar structures it makes moving between them much faster.
 
 ```bash

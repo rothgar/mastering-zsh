@@ -5,7 +5,7 @@ When passed no parameters it will list the current aliases as defined in your co
 
 ## Defining Aliases
 
-Aliases in zsh share the common `alias` bultin command from other shells.
+Aliases in zsh share the common `alias` builtin command from other shells.
 Aliases are handy for saving time when typing commands.
 If they are not "global aliases" then they only work at the beginning of a command prompt (more below).
 Typical aliases are used for commands such as:
@@ -20,7 +20,7 @@ Aliases can be single commands or expand to multiple words.
 alias gc='git commit'
 ```
 
-If you define your alias with a space after the definition it will allow the following word to be interpretted as an alias.
+If you define your alias with a space after the definition it will allow the following word to be interpreted as an alias.
 
 ```bash
 # notice the space inside the quotes

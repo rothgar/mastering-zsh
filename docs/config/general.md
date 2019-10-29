@@ -42,7 +42,7 @@ One of the main things zsh uses it for is shared [functions](../helpers/function
 
 > A shared function is different from functions you declare in your `.zshrc` file.
 
-One major difference is `$fpath` is it's an array instead of a string separated with `:`.
+One major difference with `$fpath` is that it's an array, instead of a string separated with `:`.
 Instead of saying `export fpath=$ZDOTDIR/fuctions:$fpath` you need to use array syntax like `export fpath=($ZDOTDIR/functions $fpath)` with a space between the entries.
 An even better option is to append to the array with `fpath+=('/some/directory')` so you don't delete existing paths.
 
@@ -66,7 +66,7 @@ blah blah
 
 > It's a good idea to put `emulate -L zsh` at the top of your function file to avoid user configuration or parameter expansion.
 
-There is more information about how files are searched you can read about in the [docs](http://zsh.sourceforge.net/Doc/Release/Functions.html).
+There is more information about how files are searched in the [docs](http://zsh.sourceforge.net/Doc/Release/Functions.html).
 
 `fpath` is really only useful for making functions portable.
 You'll probably use some of them (examples in the functions section), but most functions you define can go in your `.zshrc` file.

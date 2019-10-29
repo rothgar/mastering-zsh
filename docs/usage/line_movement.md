@@ -169,7 +169,7 @@ bindkey -M viins '^U' backward-kill-line
 
 ### Matching deliminators
 
-There's a handy plugin called [autopair](https://github.com/hlissner/zsh-autopair) that can automatically match your brakets and quotes in your terminal.
+There's a handy plugin called [autopair](https://github.com/hlissner/zsh-autopair) that can automatically match your brackets and quotes in your terminal.
 It works similarly to an IDE and loads an autopair-insert, autopair-close, and autopair-delete widget.
 
 ![](../../img/autopair.gif)
