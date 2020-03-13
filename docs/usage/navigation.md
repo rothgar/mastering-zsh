@@ -18,7 +18,7 @@ cd -
 Now let's set the `cdpath` variable.
 This variable will do automatic searching for a folder within folders specified in variable.
 
-If you're familiar with bash's `CDPATH` it works the same way but in zsh instead of being a colon separated string (e.g. `.:~:~/src` it's an array.
+If you're familiar with bash's `CDPATH` it works the same way but in zsh instead of being a colon separated string (e.g. `.:~:~/src`) it's an array.
 
 ```bash
 # make some temporary folders
