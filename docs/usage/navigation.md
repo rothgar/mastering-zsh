@@ -15,14 +15,16 @@ cd
 cd -
 ```
 
-Now let's set a `$CDPATH` variable.
-This variable will do automatic searching for a folder within folders specified in your `$CDPATH` variable.
+Now let's set the `cdpath` variable.
+This variable will do automatic searching for a folder within folders specified in variable.
+
+If you're familiar with bash's `CDPATH` it works the same way but in zsh instead of being a colon separated string (e.g. `.:~:~/src` it's an array.
 
 ```bash
 # make some temporary folders
 $ mkdir -p ~/test ~/src/foo/bar
 
-$ export CDPATH='.:~:~/src/'
+$ export cdpath=(. ~ ~/src/)
 
 # cd to $HOME
 $ cd
@@ -50,7 +52,7 @@ zsh also allows more powerful directory movement.
 $ ls
 foo/ bar/ some.txt
 
-$ setopt AUTO_CD
+$ setopt auto_cd
 
 # cd into foo
 $ foo
