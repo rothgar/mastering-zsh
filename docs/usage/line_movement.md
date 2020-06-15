@@ -71,7 +71,7 @@ To find widgets you can use, remember to use `zle -la` to list all widgets and `
 ## Modifying Text
 
 Remember, you can use any emacs or vi commands depending on what keymap you're using.
-You don't have to bind keys to use use them.
+You don't have to bind keys to use them.
 
 If you want some additional functionallity check out the examples below.
 
