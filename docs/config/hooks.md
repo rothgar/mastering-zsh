@@ -11,7 +11,7 @@ To display what widgets are in each of your hooks you can use the [zhooks functi
 
 ## Set $PROMPT in precmd
 
-One example fo using a hook is by changing your `$PROMPT` using `precmd` hook.
+One example of using a hook is by changing your `$PROMPT` using `precmd` hook.
 `precmd` runs before each prompt which makes it a perfect candidate for setting your `$PROMPT`.
 
 If you want to create a custom function that sets your `$RPROMPT` variable to your last command exit code you can use this.
