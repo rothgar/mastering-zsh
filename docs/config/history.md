@@ -98,7 +98,7 @@ This is great for long or multi-line commands.
 It can also be used to list commands from history and do substitution.
 
 > Bash `fc` is a little different than zsh's `fc` so be careful which man page you read.
-> `apropos fc` to find the specif version and then `man 1p fc`.
+> `apropos fc` to find the specific version and then `man 1p fc`.
 
 ```bash
 echo 'foo
