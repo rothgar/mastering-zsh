@@ -17,7 +17,7 @@ One example of using a hook is by changing your `$PROMPT` using `precmd` hook.
 If you want to create a custom function that sets your `$RPROMPT` variable to your last command exit code you can use this.
 
 ```bash
-# allows parameter expansion, arithmatic, and shell substitution in prompts
+# allows parameter expansion, arithmetic, and shell substitution in prompts
 setopt prompt_subst
 
 function check_last_exit_code() {
